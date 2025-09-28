@@ -1,0 +1,10 @@
+.containerSecondPage {
+  background-color: rgb(16, 16, 16);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}

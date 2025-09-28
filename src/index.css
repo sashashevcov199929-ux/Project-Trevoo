@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "ShantellSans";
+  src: url("./fonts/ShantellSans-Light.woff") format("woff");
+  font-weight: 100 900; /* поддержка variable font (от тонкого до жирного) */
+  font-stretch: 75% 125%; /* поддержка изменения ширины */
+  font-display: swap;
+  /* font-family: "ShantellSans", Courier, monospace;*/
+}
+@font-face {
+  font-family: "ShantellSansBold";
+  src: url("./fonts/ShantellSans-SemiBold.woff") format("woff");
+  font-weight: 100 900; /* поддержка variable font (от тонкого до жирного) */
+  font-stretch: 75% 125%; /* поддержка изменения ширины */
+  font-display: swap;
+  /* font-family: "ShantellSansBold", Courier, monospace;*/
+}
+@font-face {
+  font-family: "ShantellSansExtraBold";
+  src: url("./fonts/ShantellSans-Medium.woff") format("woff");
+
+  font-weight: 100 900; /* поддержка variable font (от тонкого до жирного) */
+  font-stretch: 75% 125%; /* поддержка изменения ширины */
+  font-display: swap; /* чтобы текст показывался сразу системным шрифтом */
+  /*
+                     font-family: "ShantellSansExtraBold", Courier, monospace;               */
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/*            font-family: "Rubik", Courier, monospace;                   */
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+html,
+body,
+:root,
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Важно для предсказуемых размеров */
+}
+html,
+body,
+:root {
+  background-image: url(./img/5.jpg);
+  background-size: cover; /* Чтобы картинка покрывала весь экран */
+  background-position: center; /* Центрируем изображение */
+  background-repeat: no-repeat; /* Не повторять */
+  height: 100%; /* Чтобы фон занимал весь экран */
+}

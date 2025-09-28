@@ -1,0 +1,9 @@
+.containerTopPanel {
+  background-color: green;
+  height: 65px;
+  width: 100vw;
+  display: flex;
+}
+.logo {
+  width: 5%;
+}

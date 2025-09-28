@@ -1,0 +1,61 @@
+.containerMainDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1 1 wrap;
+}
+
+.containerBtnTwo {
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  position: relative;
+  flex: 1 1 wrap;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.containerBtnTwo:hover {
+  box-shadow: 0 0px 5px rgb(245, 222, 179, 0.8);
+}
+.containerBtnTwo button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  flex: 1 1 wrap;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: rgb(226, 226, 225);
+  transition: all 0.2s ease;
+}
+.containerBtnTwo:hover button {
+  color: white;
+}
+
+.containerBtn {
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  position: relative;
+  flex: 1 1 wrap;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+.containerBtn:hover {
+  box-shadow: 0 0px 5px rgb(245, 222, 179, 0.8);
+}
+.containerBtn button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  flex: 1 1 wrap;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: rgb(226, 226, 225);
+  transition: all 0.2s ease;
+}
+.containerBtn:hover button {
+  color: white;
+}

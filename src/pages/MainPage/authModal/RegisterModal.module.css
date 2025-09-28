@@ -1,0 +1,448 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.modal {
+  box-shadow: 0px 0px 7px -4px rgb(201, 201, 201);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px; /* ограничиваем максимальную ширину */
+  max-height: 90vh;
+  min-height: 50vh; /* ограничиваем по высоте, чтобы не вылезала за экран */
+  overflow-y: auto; /* если контента много, появляется скролл внутри модалки */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; /* включаем прокрутку */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  gap: 7px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+.modal::-webkit-scrollbar {
+  display: none;
+}
+.logo {
+  background-image: url("./../../../img/logo.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  top: 0;
+
+  left: 0px;
+  width: 300px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.modal h2 {
+  color: wheat;
+  font-family: "ShantellSansBold", Courier, monospace;
+  text-align: center;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.modal form input {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  background-color: rgb(35, 35, 35);
+  padding: 12px 0px;
+  color: rgb(226, 224, 224);
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.modal form label {
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: rgb(226, 224, 224);
+}
+.modal button {
+  padding: 10px;
+
+  background-color: transparent;
+  border: none;
+  color: wheat;
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+}
+.modal button:hover {
+  box-shadow: 0px 0px 3px #ff6f00;
+  color: rgb(212, 212, 211);
+}
+
+.containerSpan {
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+  color: wheat;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 25px;
+  margin-left: 6px;
+  width: 47%;
+}
+.containerSpan:hover {
+  color: #ff6f00;
+}
+.haveAccount {
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: white;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 30px;
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: wheat;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.closeBtn:hover {
+  color: #ff6f00;
+}
+.containerRequired {
+  color: #ff6f00;
+}
+.containerBirthDay {
+  display: flex;
+  gap: 10px;
+}
+.containerBirthDay select {
+  background-color: rgb(35, 35, 35);
+  border-radius: 6px;
+  flex: 1;
+  height: 40px;
+  font-size: 17px;
+  color: rgb(222, 221, 221);
+  font-family: "ShantellSansBold", Courier, monospace;
+  box-shadow: 0px 0px 2px -3px rgb(201, 201, 201);
+}
+
+.containerBirthDay option {
+  color: wheat;
+  border-radius: 10px;
+  border: none;
+}
+
+/*--------------------------------------------Modal otp------------------------------------------------------*/
+.modalOtp {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 7px -4px rgb(201, 201, 201);
+
+  /* Размеры */
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px;
+  max-height: 90vh;
+  min-height: 200px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+
+  overflow-y: auto;
+}
+
+.modalOtp h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: clamp(16px, 2vw, 24px);
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: wheat;
+}
+
+.modalOtp form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* расстояние между элементами */
+  width: 100%;
+}
+
+.modalOtp label {
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: rgb(226, 224, 224);
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.modalOtp input {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  padding: 0px 10px;
+  font-family: "Rubik", Courier, monospace;
+  color: rgb(226, 224, 224);
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.verifyButton {
+  margin-top: auto; /* кнопка всегда внизу формы */
+  padding: 10px;
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  color: wheat;
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  font-size: clamp(14px, 1.5vw, 16px);
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+}
+
+.verifyButton:hover {
+  box-shadow: 0px 0px 3px #ff6f00;
+  color: rgb(212, 212, 211);
+}
+
+.emailName {
+  color: rgba(255, 111, 0, 0.8);
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+}
+
+.error {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 90%; /* ширина адаптивная, занимает 90% экрана на маленьких устройствах */
+  max-width: 300px; /* максимальная ширина на больших экранах */
+  min-width: 200px; /* минимальная ширина, чтобы не было слишком узко */
+  padding: 12px 16px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: red;
+  font-family: "ShantellSans", Courier, monospace;
+  font-size: 16px;
+  box-shadow: 0px 0px 7px -4px rgb(201, 201, 201);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  word-wrap: break-word;
+  text-align: center;
+  box-sizing: border-box; /* чтобы padding не увеличивал ширину */
+}
+
+/* Текст ошибки внутри */
+.errorText {
+  width: 100%;
+  line-height: 1.4;
+}
+.otpInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  border-radius: 8px;
+  border-left: 1px solid #ff6f00;
+  font-size: 14px;
+  color: #555;
+}
+
+.otpInfo p {
+  margin: 0;
+  color: wheat;
+  font-weight: 500;
+  font-family: "ShantellSans", Courier, monospace;
+}
+
+.otpInfo p:first-child {
+  color: wheat;
+  font-weight: 600;
+}
+
+.otpInfo p:last-child {
+  color: wheat;
+  font-family: "ShantellSans", Courier, monospace;
+}
+
+.resendSection {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid#5c5b5a;
+}
+
+.resendButton {
+  background: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "ShantellSansBold", Courier, monospace;
+  transition: all 0.3s ease;
+}
+
+.resendButton:hover:not(:disabled) {
+  color: black;
+}
+
+.resendButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.resendButton:disabled {
+  background: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.resendButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.3);
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 480px) {
+  .otpInfo {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .resendButton {
+    min-width: 180px;
+    padding: 10px 20px;
+  }
+}
+
+/* Анимации для изменений состояний */
+.otpInfo {
+  transition: all 0.3s ease;
+}
+
+.resendButton {
+  position: relative;
+  overflow: hidden;
+}
+
+.resendButton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+}
+
+.resendButton:active:not(:disabled)::after {
+  width: 100px;
+  height: 100px;
+  top: -20px;
+  left: -20px;
+}
+
+/* Дополнительные стили для лучшего UX */
+.resendSection {
+  position: relative;
+}
+
+.resendSection::before {
+  content: "Не получили код?";
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #7f8c8d;
+  font-weight: 500;
+  font-family: "ShantellSans", Courier, monospace;
+}
+
+/* Стили для счетчика времени */
+.otpInfo .timer {
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  background: rgb(255, 111, 0, 0.9);
+  color: white;
+  padding: 6px 6px;
+  border-radius: 3px;
+  min-width: 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+.otpInfo .attempts {
+  background: #ff6f00;
+  color: white;
+  padding: 6px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Состояния предупреждений */
+.otpInfo.warning {
+  border-left-color: #f39c12;
+  background-color: rgb(35, 35, 35);
+}
+
+.otpInfo.danger {
+  border-left-color: #e74c3c;
+  background-color: rgb(35, 35, 35);
+}
+
+/* Адаптация под очень маленькие экраны */
+@media (max-width: 400px) {
+  .error {
+    font-size: 13px; /* уменьшаем шрифт */
+    padding: 10px 12px; /* уменьшаем padding */
+  }
+}
+/* ------------------ медиазапросы для маленьких экранов ------------------ */
+@media (max-width: 768px) {
+  .modalOtp {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalOtp {
+    width: 90%;
+    padding: 15px;
+  }
+  .modalOtp form {
+    gap: 10px;
+  }
+}

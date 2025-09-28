@@ -1,0 +1,76 @@
+.customSelectContainer {
+  position: relative;
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.customSelectHeader {
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  padding: 11px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(226, 224, 224);
+  font-family: "ShantellSansBold", Courier, monospace;
+}
+
+.customSelectOptions {
+  position: absolute;
+  color: rgb(226, 224, 224);
+  left: 0;
+  width: 100%;
+  max-height: 180px;
+  overflow-y: auto;
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  border-radius: 10px;
+  z-index: 10;
+  margin-bottom: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+.customSelectOption {
+  padding: 10px 12px;
+  cursor: pointer;
+  font-family: "ShantellSansBold", Courier, monospace;
+}
+
+.customSelectOption:hover {
+  background-color: #ff6f00;
+}
+
+.arrow {
+  font-size: 12px;
+}
+.dropUp {
+  bottom: 100%; /* всегда открывается вверх */
+}
+.customSelectOptions::-webkit-scrollbar {
+  width: 0px;
+  opacity: 0;
+}
+
+.customSelectOptions::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 6px;
+  width: 0px;
+  opacity: 0;
+}
+
+.customSelectOptions::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 6px;
+  width: 0px;
+  opacity: 0; /* отступы вокруг */
+}
+
+.customSelectOptions::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+  width: 0px;
+  opacity: 0;
+}

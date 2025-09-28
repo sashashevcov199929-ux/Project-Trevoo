@@ -1,0 +1,78 @@
+.containerMainDiv {
+  height: 100vh;
+  flex: 1 1 wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./../../img/5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0px 10px rgb(4, 4, 4);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "ShantellSansBold", Courier, monospace;
+  font-size: 20px;
+  transition: height 0.3s ease, width 0.2s ease 0.2s, color 0.3s ease;
+  flex: 1 1 wrap;
+}
+
+.contentInfo {
+  background-color: red;
+  height: 30%;
+  width: 4%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: width 0.5s ease 0.2s, height 0.3s ease, background 0.3s ease;
+  box-shadow: 0 2px 10px -1px rgb(0, 0, 0);
+  box-shadow: 0px 0px 5px -2px rgb(245, 222, 179, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentInfo:hover {
+  height: 70%;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.containerIcon {
+  color: #ff6f00;
+  transition: all 0.2s ease;
+}
+.contentInfo:hover .containerIcon {
+  opacity: 0;
+}
+.containerInInfo {
+  width: 95%;
+  height: 90%;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.containerInInfoOne {
+  flex: 1;
+  max-width: 700px;
+  word-break: break-word;
+  white-space: pre-wrap;
+  color: rgb(227, 227, 227);
+  border-radius: 10px;
+  font-size: 15px;
+}
+.containerInInfoToo {
+  flex: 1;
+  max-width: 700px;
+  word-break: break-word;
+  white-space: normal;
+  background-color: red;
+  border-radius: 10px;
+}

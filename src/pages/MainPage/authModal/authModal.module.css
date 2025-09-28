@@ -1,0 +1,234 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll; /* включаем прокрутку */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  flex: 1 1 wrap;
+}
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+.modal {
+  background-color: rgb(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 7px -4px rgb(201, 201, 201);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 wrap;
+  gap: 10px;
+  position: relative;
+}
+
+.logo {
+  background-image: url("./../../../img/logo.png");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  top: 0;
+
+  left: 0px;
+  width: 300px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.modal h2 {
+  color: wheat;
+  font-family: "ShantellSansBold", Courier, monospace;
+  text-align: center;
+  flex: 1 1 wrap;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1 1 wrap;
+}
+.modal form input {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  padding: 12px 0px;
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 400;
+  color: rgb(226, 224, 224);
+  padding-left: 10px;
+  font-size: 15px;
+  flex: 1 1 wrap;
+}
+
+.modal form label {
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: rgb(226, 224, 224);
+}
+.btnSubmit {
+  padding: 10px;
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  color: wheat;
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+}
+.btnSubmit:hover {
+  box-shadow: 0px 0px 3px#ff6f00;
+  color: rgb(212, 212, 211);
+}
+
+.containerSwitch {
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+  color: wheat;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 5px;
+  width: 80%;
+}
+.containerSwitch:hover {
+  color: #ff6f00;
+}
+.modal p {
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: white;
+}
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 30px;
+  font-family: "ShantellSansBold", Courier, monospace;
+  color: wheat;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.closeBtn:hover {
+  color: #ff6f00;
+}
+
+.buttonReset {
+  border: none;
+  background-color: transparent;
+  width: 40%;
+  color: white;
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.buttonReset:hover {
+  color: #ff6f00;
+}
+.error {
+  color: red;
+  font-family: "ShantellSans", Courier, monospace;
+  font-size: 13px;
+}
+.containerRequired {
+  color: #ff6f00;
+}
+/* --------------------------------------------------------------------------*/
+.overlayInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalInfo {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 7px -4px rgb(201, 201, 201);
+  border-radius: 12px;
+
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Кнопка */
+.buttonInfo {
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgb(201, 201, 201);
+  color: wheat;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+.buttonInfo:hover {
+  box-shadow: 0px 0px 3px #ff6f00;
+  color: rgb(212, 212, 211);
+}
+
+/* Тексты */
+.subText {
+  font-family: "Rubik", Courier, monospace;
+  font-weight: 500;
+  color: rgb(224, 223, 223);
+  font-size: 15px;
+  text-align: center;
+}
+.textInfo {
+  color: wheat;
+  font-family: "ShantellSansBold", Courier, monospace;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* 📱 Адаптив */
+@media (max-width: 500px) {
+  .modalInfo {
+    width: 95%;
+    padding: 15px;
+  }
+  .textInfo {
+    font-size: 18px;
+  }
+  .subText {
+    font-size: 14px;
+  }
+  .buttonInfo {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}

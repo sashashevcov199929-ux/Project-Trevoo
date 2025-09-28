@@ -1,0 +1,9 @@
+.containerMainPage {
+  background-image: url(./../../img/5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* на всю высоту экрана */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,38 @@
+.containerOwnerList {
+  background-color: rgb(166, 0, 255);
+  flex: 1;
+  display: flex;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.containerListServerName {
+  background-color: aquamarine;
+  width: 680px;
+  min-width: 300px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow-x: auto; /* горизонтальный скролл, когда блоки не помещаются */
+  overflow-y: hidden; /* вертикальный скролл не нужен */
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+.containerServerName {
+  width: 65px;
+  min-width: 60px; /* чтобы flex не сжимал */
+  background-color: red;
+  display: flex;
+  height: 53px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  font-family: "ShantellSans", Courier, monospace;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.containerServerName:hover {
+  transform: translateY(10px);
+}
